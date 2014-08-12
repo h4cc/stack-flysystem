@@ -1,0 +1,19 @@
+{
+    "name": "h4cc/stack-flysystem",
+    "require": {
+        "league/flysystem": "~0.5",
+        "silpion/stack-logger": "~1.0",
+        "monolog/monolog": "~1.8",
+        "stack/builder": "~1.0",
+        "stack/run": "~1.0"
+    },
+    "authors": [
+        {
+            "name": "Julius Beckmann",
+            "email": "github@h4cc.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"h4cc\\StackFlysystem\\": "src/"}
+    }
+}
