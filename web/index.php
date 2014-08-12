@@ -18,6 +18,7 @@ use h4cc\StackFlysystem\Handler\Writer;
 $filesystem = new Filesystem(new Local(__DIR__ . '/../files/'));
 
 $app = new FlysystemHttpKernel($filesystem);
+// just use the handlers you need.
 $app->addHandler(new Lister($filesystem));
 $app->addHandler(new Reader($filesystem));
 $app->addHandler(new Writer($filesystem));

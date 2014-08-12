@@ -1,10 +1,11 @@
 # h4cc/StackFlysystem
 
-This is the implementation of a idea inspired by [StackPHP](http://stackphp.com/)
+This implementation of a HttpKernelInterface is providing a REST Api
+and using a flysystem abstraction as storage backend.
 
+A idea inspired by [StackPHP](http://stackphp.com/).
 Next to middlewares providing extra functionality for the HttpKernelInterface,
 there might also be some single purpose applications.
-
 These tiny apps might be used like middlewares to construct larger systems with ease.
 
 ## Installing
