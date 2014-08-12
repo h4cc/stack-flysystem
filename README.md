@@ -1,6 +1,6 @@
 # h4cc/StackFlysystem
 
-This is the implementation of a idea inspired by [StackPHP](stackphp.com)
+This is the implementation of a idea inspired by [StackPHP](http://stackphp.com/)
 
 Next to middlewares providing extra functionality for the HttpKernelInterface,
 there might also be some single purpose applications.
@@ -33,7 +33,7 @@ Using some curl Requests to use all the Handlers.
 # Downloading a image from Google
 curl -O https://www.google.de/images/srpr/logo11w.png
 
-# List empty dir.
+# List empty dir (except .gitkeep file).
 curl -X GET http://localhost:8080/
 
 # POST image.
