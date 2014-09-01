@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "defbe62f1fa0127ed832942437fd8f0d",
+    "hash": "b0fcdf64aeabc83cddab3b57731362fe",
     "packages": [
         {
             "name": "league/flysystem",
-            "version": "0.5.3",
+            "version": "0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "305a64e3407cc8cc5e8d5657ce151bb159885ccb"
+                "reference": "17bb2a0f522f3d325b6406a9db0292bc7484ade5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/305a64e3407cc8cc5e8d5657ce151bb159885ccb",
-                "reference": "305a64e3407cc8cc5e8d5657ce151bb159885ccb",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/17bb2a0f522f3d325b6406a9db0292bc7484ade5",
+                "reference": "17bb2a0f522f3d325b6406a9db0292bc7484ade5",
                 "shasum": ""
             },
             "require": {
@@ -26,12 +26,13 @@
             "require-dev": {
                 "aws/aws-sdk-php": "~2.4",
                 "dropbox/dropbox-sdk": "~1.1.1",
-                "league/event": "~0.2.0",
+                "league/event": "~0.3",
                 "league/phpunit-coverage-listener": "~1.1",
                 "mockery/mockery": "~0.9@dev",
                 "phpseclib/phpseclib": "~0.3.5",
+                "phpspec/phpspec": "~2.0",
                 "phpunit/phpunit": "~4.0",
-                "predis/predis": "~0.8.4",
+                "predis/predis": "~1.0",
                 "rackspace/php-opencloud": "~1.9.1",
                 "sabre/dav": "~2.0.2"
             },
@@ -47,7 +48,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5-dev"
+                    "dev-master": "0.6-dev"
                 }
             },
             "autoload": {
@@ -70,129 +71,16 @@
                 "WebDAV",
                 "aws",
                 "dropbox",
+                "file systems",
+                "files",
                 "filesystem",
                 "ftp",
                 "remote",
                 "s3",
-                "sftp"
+                "sftp",
+                "storage"
             ],
-            "time": "2014-07-25 11:46:12"
-        },
-        {
-            "name": "monolog/monolog",
-            "version": "1.10.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "25b16e801979098cb2f120e697bfce454b18bf23"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/25b16e801979098cb2f120e697bfce454b18bf23",
-                "reference": "25b16e801979098cb2f120e697bfce454b18bf23",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "psr/log": "~1.0"
-            },
-            "require-dev": {
-                "aws/aws-sdk-php": "~2.4, >2.4.8",
-                "doctrine/couchdb": "~1.0@dev",
-                "graylog2/gelf-php": "~1.0",
-                "phpunit/phpunit": "~3.7.0",
-                "raven/raven": "~0.5",
-                "ruflin/elastica": "0.90.*"
-            },
-            "suggest": {
-                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
-                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
-                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-                "ext-mongo": "Allow sending log messages to a MongoDB server",
-                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
-                "raven/raven": "Allow sending log messages to a Sentry server",
-                "rollbar/rollbar": "Allow sending log messages to Rollbar",
-                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.10.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Monolog\\": "src/Monolog"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
-            "homepage": "http://github.com/Seldaek/monolog",
-            "keywords": [
-                "log",
-                "logging",
-                "psr-3"
-            ],
-            "time": "2014-06-04 16:30:04"
-        },
-        {
-            "name": "pimple/pimple",
-            "version": "v1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fabpot/Pimple.git",
-                "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Pimple/zipball/2019c145fe393923f3441b23f29bbdfaa5c58c4d",
-                "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Pimple": "lib/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com",
-                    "homepage": "http://fabien.potencier.org",
-                    "role": "Lead Developer"
-                }
-            ],
-            "description": "Pimple is a simple Dependency Injection Container for PHP 5.3",
-            "homepage": "http://pimple.sensiolabs.org",
-            "keywords": [
-                "container",
-                "dependency injection"
-            ],
-            "time": "2013-11-22 08:30:29"
+            "time": "2014-08-26 11:05:47"
         },
         {
             "name": "psr/log",
@@ -231,59 +119,6 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
-        },
-        {
-            "name": "silpion/stack-logger",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/h4cc/StackLogger.git",
-                "reference": "1bdbb3e7d157aa9069ace90267c249f43dc02b77"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/h4cc/StackLogger/zipball/1bdbb3e7d157aa9069ace90267c249f43dc02b77",
-                "reference": "1bdbb3e7d157aa9069ace90267c249f43dc02b77",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3",
-                "pimple/pimple": "~1.1",
-                "psr/log": "~1.0",
-                "symfony/http-foundation": "~2.1",
-                "symfony/http-kernel": "~2.1"
-            },
-            "require-dev": {
-                "monolog/monolog": "~1.8",
-                "phpunit/phpunit": "3.7.*",
-                "silex/silex": "~1.2",
-                "stack/builder": "~1.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Silpion\\Stack\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Julius Beckmann",
-                    "email": "beckmann@silpion.de"
-                }
-            ],
-            "description": "Logger Stack middleware for logging request and responses.",
-            "keywords": [
-                "PSR3",
-                "logger",
-                "request",
-                "response",
-                "stack"
-            ],
-            "time": "2014-04-17 13:57:03"
         },
         {
             "name": "stack/builder",
@@ -334,6 +169,52 @@
                 "stack"
             ],
             "time": "2014-01-28 19:42:24"
+        },
+        {
+            "name": "stack/callable-http-kernel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stackphp/CallableHttpKernel.git",
+                "reference": "11f5143100e4833c99ada9395c80ca37a2896f4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stackphp/CallableHttpKernel/zipball/11f5143100e4833c99ada9395c80ca37a2896f4a",
+                "reference": "11f5143100e4833c99ada9395c80ca37a2896f4a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/http-foundation": "~2.1",
+                "symfony/http-kernel": "~2.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Stack": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Igor Wiedler",
+                    "email": "igor@wiedler.ch"
+                }
+            ],
+            "description": "HttpKernelInterface implementation based on callables.",
+            "keywords": [
+                "stack"
+            ],
+            "time": "2014-08-06 21:03:27"
         },
         {
             "name": "stack/run",
@@ -623,19 +504,187 @@
         }
     ],
     "packages-dev": [
-
+        {
+            "name": "monolog/monolog",
+            "version": "1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "25b16e801979098cb2f120e697bfce454b18bf23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/25b16e801979098cb2f120e697bfce454b18bf23",
+                "reference": "25b16e801979098cb2f120e697bfce454b18bf23",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "~1.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "~2.4, >2.4.8",
+                "doctrine/couchdb": "~1.0@dev",
+                "graylog2/gelf-php": "~1.0",
+                "phpunit/phpunit": "~3.7.0",
+                "raven/raven": "~0.5",
+                "ruflin/elastica": "0.90.*"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "raven/raven": "Allow sending log messages to a Sentry server",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.10.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2014-06-04 16:30:04"
+        },
+        {
+            "name": "pimple/pimple",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fabpot/Pimple.git",
+                "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fabpot/Pimple/zipball/2019c145fe393923f3441b23f29bbdfaa5c58c4d",
+                "reference": "2019c145fe393923f3441b23f29bbdfaa5c58c4d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Pimple": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Pimple is a simple Dependency Injection Container for PHP 5.3",
+            "homepage": "http://pimple.sensiolabs.org",
+            "keywords": [
+                "container",
+                "dependency injection"
+            ],
+            "time": "2013-11-22 08:30:29"
+        },
+        {
+            "name": "silpion/stack-logger",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/h4cc/StackLogger.git",
+                "reference": "1bdbb3e7d157aa9069ace90267c249f43dc02b77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/h4cc/StackLogger/zipball/1bdbb3e7d157aa9069ace90267c249f43dc02b77",
+                "reference": "1bdbb3e7d157aa9069ace90267c249f43dc02b77",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "pimple/pimple": "~1.1",
+                "psr/log": "~1.0",
+                "symfony/http-foundation": "~2.1",
+                "symfony/http-kernel": "~2.1"
+            },
+            "require-dev": {
+                "monolog/monolog": "~1.8",
+                "phpunit/phpunit": "3.7.*",
+                "silex/silex": "~1.2",
+                "stack/builder": "~1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Silpion\\Stack\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Julius Beckmann",
+                    "email": "beckmann@silpion.de"
+                }
+            ],
+            "description": "Logger Stack middleware for logging request and responses.",
+            "keywords": [
+                "PSR3",
+                "logger",
+                "request",
+                "response",
+                "stack"
+            ],
+            "time": "2014-04-17 13:57:03"
+        }
     ],
     "aliases": [
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "stack/callable-http-kernel": 20
+    },
     "prefer-stable": false,
-    "platform": [
-
-    ],
+    "platform": {
+        "php": ">=5.3.3"
+    },
     "platform-dev": [
 
     ]

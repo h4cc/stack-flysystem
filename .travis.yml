@@ -1,0 +1,18 @@
+language: php
+
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+
+before_script:
+  - composer self-update || true
+  - composer install --prefer-dist --no-interaction
+  - php -S 0.0.0.0:8080 -t web web/index.php & echo $! > pid
+
+script:
+  - cd tests && make
+
+after_script:
+  - kill $( < pid)
+  - cat requests.log
