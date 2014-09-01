@@ -11,10 +11,23 @@ Next to middlewares providing extra functionality for the HttpKernelInterface,
 there might also be some single purpose applications like this one.
 These tiny apps can be used to construct larger systems with ease, like middlewares do.
 
-## Installing
+## Installation
 
-### via Composer
+### Composer
 
+The recommended way to install `h4cc/stack-flysystem` is through [Composer](http://getcomposer.org/):
+
+``` json
+{
+    "require": {
+        "h4cc/stack-flysystem": "@stable"
+    }
+}
+```
+
+**Protip:** you should browse the
+[`h4cc/stack-flysystem`](https://packagist.org/packages/h4cc/stack-flysystem)
+page to choose a stable version to use, avoid the `@stable` meta constraint.
 
 
 ### Development and Standalone
@@ -30,7 +43,7 @@ php composer.phar install
 
 ## Example usage
 
-Start the website with PHP internal webserver.
+Start the application with PHP internal webserver.
 
 ```
 cd web
