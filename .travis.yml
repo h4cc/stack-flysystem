@@ -11,7 +11,7 @@ before_script:
   - php -S 0.0.0.0:8080 -t web web/index.php & echo $! > pid
 
 script:
-  - cd tests && make
+  - cd tests; make; cd ..
 
 after_script:
   - kill $( < pid)

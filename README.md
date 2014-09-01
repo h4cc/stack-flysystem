@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/h4cc/stack-flysystem.svg?branch=master)](https://travis-ci.org/h4cc/stack-flysystem)
+
 # h4cc/StackFlysystem
 
 This implementation of a HttpKernelInterface is providing a REST Api
