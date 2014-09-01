@@ -1,16 +1,23 @@
-[![Build Status](https://travis-ci.org/h4cc/stack-flysystem.svg?branch=master)](https://travis-ci.org/h4cc/stack-flysystem)
 
 # h4cc/StackFlysystem
 
 This implementation of a HttpKernelInterface is providing a REST Api
 and using a flysystem abstraction as storage backend.
 
+[![Build Status](https://travis-ci.org/h4cc/stack-flysystem.svg?branch=master)](https://travis-ci.org/h4cc/stack-flysystem)
+
 A idea inspired by [StackPHP](http://stackphp.com/).
 Next to middlewares providing extra functionality for the HttpKernelInterface,
-there might also be some single purpose applications.
-These tiny apps might be used like middlewares to construct larger systems with ease.
+there might also be some single purpose applications like this one.
+These tiny apps can be used to construct larger systems with ease, like middlewares do.
 
 ## Installing
+
+### via Composer
+
+
+
+### Development and Standalone
 
 Clone this repo and run composer:
 
@@ -30,7 +37,7 @@ cd web
 php -S 0.0.0.0:8080 index.php
 ```
 
-Using some curl Requests to use all the Handlers.
+Using some curl Requests to try all the Handlers.
 
 ```
 # Downloading a image from Google
