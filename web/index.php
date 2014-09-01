@@ -39,7 +39,10 @@ $app->addHandler(new FileDeleter($filesystem));
 // Stacking some middlewares.
 $stack = (new Stack\Builder())
     // Add a logger so we can "see" the requests.
-    ->push('Silpion\Stack\Logger', array('logger' => new Logger('flysystem', array(new StreamHandler(__DIR__.'/../requests.log')))));
+    ->push('Silpion\Stack\Logger', array(
+        'logger' => new Logger('flysystem', array(new StreamHandler(__DIR__.'/../requests.log')))
+    )
+);
 $app = $stack->resolve($app);
 
 // Run!

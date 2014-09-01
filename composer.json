@@ -1,5 +1,10 @@
 {
     "name": "h4cc/stack-flysystem",
+    "description": "A Stack HttpKernel for Flysystem filesystems as a single purpose application.",
+    "license": "MIT",
+    "keywords": [
+        "stack", "http", "rest", "files"
+    ],
     "authors": [
         {
             "name": "Julius Beckmann",
@@ -7,7 +12,7 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.4.0",
         "league/flysystem": "~0.5",
         "stack/builder": "~1.0",
         "stack/run": "~1.0",
