@@ -16,7 +16,7 @@
         "league/flysystem": "~0.5",
         "stack/builder": "~1.0",
         "stack/run": "~1.0",
-        "stack/callable-http-kernel": "1.0.*@dev"
+        "stack/callable-http-kernel": "~1.0"
     },
     "require-dev": {
         "silpion/stack-logger": "~1.0",
