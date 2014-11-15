@@ -13,11 +13,11 @@ namespace h4cc\StackFlysystem\Handler;
 
 use DateTime;
 use h4cc\StackFlysystem\AbstractHandler;
+use League\Flysystem\File;
 use League\Flysystem\FileNotFoundException;
 use Stack\CallableHttpKernel;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\StreamedResponse;
 
 /**
  * Handler for reading a file.
@@ -39,13 +39,7 @@ class FileReader extends AbstractHandler
             return $this->handleDefault($request, $type, $catch, $exception);
         }
 
-        $response = new StreamedResponse(
-            function () use ($file) {
-                fpassthru($file->readStream());
-            },
-            Response::HTTP_OK,
-            array('Content-Type' => $file->getMimetype())
-        );
+        $response = $this->createResponseForFile($file);
 
         $timestamp = $file->getTimestamp();
         if ($timestamp) {
@@ -53,6 +47,15 @@ class FileReader extends AbstractHandler
         }
 
         return $response;
+    }
+
+    protected function createResponseForFile(File $file)
+    {
+        return new Response(
+            $file->read(),
+            Response::HTTP_OK,
+            array('Content-Type' => $file->getMimetype())
+        );
     }
 
     protected function createDefaultHttpKernel()
